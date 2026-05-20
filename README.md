@@ -43,51 +43,64 @@ Email_Intent/
 ├── requirements.txt
 ├── README.md
 ├── .env
+
+
 ⚙️ Installation
 Clone Repository
 git clone YOUR_GITHUB_REPO_LINK
 Move into Folder
 cd Email_Intent
+
 🧪 Create Virtual Environment
 Windows
 python -m venv email
+
 Activate Environment
 email\\Scripts\\activate
+
 📦 Install Libraries
 pip install -r requirements.txt
-🔑 Setup API Key
 
+🔑 Setup API Key
 Create .env file:
 
 GROQ_API_KEY=your_api_key_here
+
 ▶️ Run Streamlit App
 streamlit run app.py
+
 📥 Example Input
 Please resolve this issue immediately.
 Users are unable to login.
+
 📤 Example Output
 {
   "intent": "Request",
   "urgency": "High",
   "tone": "Urgent"
 }
+
 🧠 How It Works
 User enters email
 Prompt template analyzes email
+
 Groq LLM predicts:
 intent
 urgency
 tone
+
 JsonOutputParser converts response into JSON
+
 Streamlit displays structured output
+
 🚀 Deployment
 
 Deploy using:
-
 Streamlit Cloud
 Hugging Face Spaces
-👩‍💻 Author
 
+
+👩‍💻 Author
 Lalitha
 
 ⭐ Future Improvements
